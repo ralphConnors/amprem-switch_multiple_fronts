@@ -1,4 +1,4 @@
-# switch_multiple_fronts - Plugin for Ampersand Remote.
+# switch_multiple_fronts - Plugin for [Ampersand Remote](https://github.com/ralphConnors/AmpersandRemote).
 
 ### Description
 Allows user to switch into multiple fronts at once.
