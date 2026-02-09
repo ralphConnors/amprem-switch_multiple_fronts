@@ -2,18 +2,21 @@
 Switch Multiple Fronts Plugin
 - Allows switching multiple members/custom fronts to fronting status.
 
-- Version 1.0
+- Version 1.1
 - Created on 2/2/2026
+- Updated on 2/9/2026
 
 - For Ampersand Remote
 '''
 
-import api_client
+from api_client import ApiClient
 import json, binascii, os
 
 # get api from json file.
 with open("api_and_id.json", 'r') as f:
     api_and_id = json.load(f)
+
+api_client = ApiClient(api_and_id['api'], api_and_id['id'])
 
 def getDocID():
     random_bytes = os.urandom(12)
@@ -68,7 +71,7 @@ def run():
     elif values[0] > total_options:
         print("Please try again.")
     else:
-        api_client.remove_all_fronters(api_and_id['api'])
+        api_client.remove_all_fronters()
         
         if values[0] <= len(members_list):
             selected_front_str = str(values[0]-1)
