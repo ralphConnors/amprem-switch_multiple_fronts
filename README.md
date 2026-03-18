@@ -3,6 +3,9 @@
 ### Description
 Allows user to switch into multiple fronts at once.
 It can also include switching to custom fronts as well.
+
+Update: See Ampersand Remote repositiory README for what happens to the project.
+
 ### Usage
 - Members fronting.
 [![multiple-members.gif](https://i.postimg.cc/fbNzk7Hq/multiple-members.gif)](https://postimg.cc/TKtM4bvn)
